@@ -1,0 +1,17 @@
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\bin\Debug\net8.0\InfraStrucure.InterRapidisimo.deps.json
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\bin\Debug\net8.0\InfraStrucure.InterRapidisimo.runtimeconfig.json
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\bin\Debug\net8.0\InfraStrucure.InterRapidisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\bin\Debug\net8.0\InfraStrucure.InterRapidisimo.pdb
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\bin\Debug\net8.0\Domain.IterRapisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\bin\Debug\net8.0\Domain.IterRapisimo.pdb
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\InfraStrucure.InterRapidisimo.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\InfraStrucure.InterRapidisimo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\InfraStrucure.InterRapidisimo.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\InfraStrucure.InterRapidisimo.AssemblyInfo.cs
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\InfraStrucure.InterRapidisimo.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\InfraStr.62F32EC6.Up2Date
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\InfraStrucure.InterRapidisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\refint\InfraStrucure.InterRapidisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\InfraStrucure.InterRapidisimo.pdb
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\InfraStrucure.InterRapidisimo.genruntimeconfig.cache
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\ref\InfraStrucure.InterRapidisimo.dll

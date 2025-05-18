@@ -1,0 +1,758 @@
+[
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AlumnosController",
+    "Method": "CrearUsuario",
+    "RelativePath": "api/Alumnos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.InteRapidisimo.Features.Alumnos.Command.CreateAlumnoCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AlumnosController",
+    "Method": "GetAll",
+    "RelativePath": "api/Alumnos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.IterRapisimo.DTOs.Alumnos.VerAlumnosDTO, Domain.IterRapisimo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AlumnosController",
+    "Method": "DeleteAlumno",
+    "RelativePath": "api/Alumnos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AlumnosController",
+    "Method": "GetStudentByIdl",
+    "RelativePath": "api/Alumnos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AlumnosController",
+    "Method": "UpdateAlumno",
+    "RelativePath": "api/Alumnos/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Domain.IterRapisimo.DTOs.Alumnos.ActualizarAlumnoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AlumnosController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/Alumnos/Usuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.IterRapisimo.DTOs.Usuarios.GetUsuariosDTO, Domain.IterRapisimo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AsignacionesController",
+    "Method": "CrearAsignaciones",
+    "RelativePath": "api/Asignaciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.InteRapidisimo.Features.Asignaciones.Commands.CreateAsignacionesCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AsignacionesController",
+    "Method": "GetAll",
+    "RelativePath": "api/Asignaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.IterRapisimo.DTOs.Alumnos.VerAlumnosDTO, Domain.IterRapisimo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AsignacionesController",
+    "Method": "DeleteAignaciono",
+    "RelativePath": "api/Asignaciones/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AsignacionesController",
+    "Method": "GetAssigmentByIdl",
+    "RelativePath": "api/Asignaciones/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AsignacionesController",
+    "Method": "GetAllTeachers",
+    "RelativePath": "api/Asignaciones/Docentes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.IterRapisimo.DTOs.SelectDocenteDTO, Domain.IterRapisimo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AsignacionesController",
+    "Method": "GetAllGrades",
+    "RelativePath": "api/Asignaciones/Grados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.IterRapisimo.DTOs.Asignaciones.SelectGradosDTO, Domain.IterRapisimo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AsignacionesController",
+    "Method": "GetAllSubjects",
+    "RelativePath": "api/Asignaciones/Materias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.IterRapisimo.DTOs.Asignaciones.SelectMateriasDTO, Domain.IterRapisimo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AsignacionesController",
+    "Method": "UpdateAsignaciones",
+    "RelativePath": "api/Asignaciones/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Domain.IterRapisimo.DTOs.Asignaciones.ActualizarAsignacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "Domain.IterRapisimo.DTOs.Usuarios.LoginRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.CalificacionesController",
+    "Method": "CrearCalificaciones",
+    "RelativePath": "api/Calificaciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.InteRapidisimo.Features.Calificaciones.Commands.CreateCalificacionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.CalificacionesController",
+    "Method": "GetAll",
+    "RelativePath": "api/Calificaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.IterRapisimo.DTOs.Calificaciones.VerCalificacionesDTO, Domain.IterRapisimo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.CalificacionesController",
+    "Method": "DeleteCalificaciones",
+    "RelativePath": "api/Calificaciones/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.CalificacionesController",
+    "Method": "GetCalificacionesByIdl",
+    "RelativePath": "api/Calificaciones/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.CalificacionesController",
+    "Method": "Updatecalificaciones",
+    "RelativePath": "api/Calificaciones/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Domain.IterRapisimo.DTOs.Calificaciones.ActualizarCalificacionesDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.DocentesController",
+    "Method": "CrearDocente",
+    "RelativePath": "api/Docentes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.InteRapidisimo.Features.Docentes.Commands.CreateDocenteCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.DocentesController",
+    "Method": "GetAll",
+    "RelativePath": "api/Docentes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.IterRapisimo.DTOs.Alumnos.VerAlumnosDTO, Domain.IterRapisimo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.DocentesController",
+    "Method": "DeleteDocente",
+    "RelativePath": "api/Docentes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.DocentesController",
+    "Method": "GetTeacherByIdl",
+    "RelativePath": "api/Docentes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.DocentesController",
+    "Method": "GetSelectedTeachers",
+    "RelativePath": "api/Docentes/SelectedTeachers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.IterRapisimo.DTOs.Docentes.SelectDocentesDTO, Domain.IterRapisimo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.DocentesController",
+    "Method": "UpdateAlumno",
+    "RelativePath": "api/Docentes/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Domain.IterRapisimo.DTOs.Docentes.ActualizarDocenteDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.GradosController",
+    "Method": "CrearGrado",
+    "RelativePath": "api/Grados",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.InteRapidisimo.Features.Grados.Commands.CreateGradoCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.GradosController",
+    "Method": "GetAll",
+    "RelativePath": "api/Grados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.IterRapisimo.DTOs.Grados.VerGradosDTO, Domain.IterRapisimo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.GradosController",
+    "Method": "DeleteGrado",
+    "RelativePath": "api/Grados/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.GradosController",
+    "Method": "GetGradoByIdl",
+    "RelativePath": "api/Grados/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.GradosController",
+    "Method": "UpdateGrado",
+    "RelativePath": "api/Grados/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Domain.IterRapisimo.DTOs.Grados.ActualizarGradoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.MateriasController",
+    "Method": "CrearMaterias",
+    "RelativePath": "api/Materias",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.InteRapidisimo.Features.Materias.Commands.CreateMateriaCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.MateriasController",
+    "Method": "GetAll",
+    "RelativePath": "api/Materias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.IterRapisimo.DTOs.Materias.VerMateriasDTO, Domain.IterRapisimo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.MateriasController",
+    "Method": "DeleteMateria",
+    "RelativePath": "api/Materias/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.MateriasController",
+    "Method": "GetMateriaByIdl",
+    "RelativePath": "api/Materias/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.MateriasController",
+    "Method": "UpdateMateria",
+    "RelativePath": "api/Materias/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Domain.IterRapisimo.DTOs.Materias.ActualizarMateriaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.MatriculasController",
+    "Method": "CrearMatricula",
+    "RelativePath": "api/Matriculas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.InteRapidisimo.Features.Matriculas.Commands.CreateMatriculaCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.MatriculasController",
+    "Method": "GetAll",
+    "RelativePath": "api/Matriculas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.IterRapisimo.DTOs.Matriculas.VerMatriculasDTO, Domain.IterRapisimo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.MatriculasController",
+    "Method": "DeleteMatricula",
+    "RelativePath": "api/Matriculas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.MatriculasController",
+    "Method": "GetRecordByIdl",
+    "RelativePath": "api/Matriculas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.MatriculasController",
+    "Method": "GetAllStudents",
+    "RelativePath": "api/Matriculas/Alumnos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.IterRapisimo.DTOs.Matriculas.SelectAlumnosDTO, Domain.IterRapisimo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.MatriculasController",
+    "Method": "UpdateMatricula",
+    "RelativePath": "api/Matriculas/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Domain.IterRapisimo.DTOs.Matriculas.ActualizarMatriculaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.UsuariosController",
+    "Method": "CrearUsuario",
+    "RelativePath": "api/Usuarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.InteRapidisimo.Features.Usuarios.Command.CreateUsuarioCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.InterRapisimo.Controllers.UsuariosController",
+    "Method": "VerUsuarioPorId",
+    "RelativePath": "api/Usuarios/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

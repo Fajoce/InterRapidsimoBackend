@@ -1,0 +1,12 @@
+C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\bin\Debug\net8.0\Domain.IterRapisimo.deps.json
+C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\bin\Debug\net8.0\Domain.IterRapisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\bin\Debug\net8.0\Domain.IterRapisimo.pdb
+C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\Domain.IterRapisimo.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\Domain.IterRapisimo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\Domain.IterRapisimo.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\Domain.IterRapisimo.AssemblyInfo.cs
+C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\Domain.IterRapisimo.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\Domain.IterRapisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\refint\Domain.IterRapisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\Domain.IterRapisimo.pdb
+C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\ref\Domain.IterRapisimo.dll

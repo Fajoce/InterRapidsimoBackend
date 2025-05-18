@@ -1,0 +1,11 @@
+C:\Users\USER\source\repos\InterRapisimo\Persistencia.InterRapisimo\bin\Debug\net8.0\Persistencia.InterRapisimo.deps.json
+C:\Users\USER\source\repos\InterRapisimo\Persistencia.InterRapisimo\bin\Debug\net8.0\Persistencia.InterRapisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\Persistencia.InterRapisimo\bin\Debug\net8.0\Persistencia.InterRapisimo.pdb
+C:\Users\USER\source\repos\InterRapisimo\Persistencia.InterRapisimo\obj\Debug\net8.0\Persistencia.InterRapisimo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\InterRapisimo\Persistencia.InterRapisimo\obj\Debug\net8.0\Persistencia.InterRapisimo.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\InterRapisimo\Persistencia.InterRapisimo\obj\Debug\net8.0\Persistencia.InterRapisimo.AssemblyInfo.cs
+C:\Users\USER\source\repos\InterRapisimo\Persistencia.InterRapisimo\obj\Debug\net8.0\Persistencia.InterRapisimo.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\InterRapisimo\Persistencia.InterRapisimo\obj\Debug\net8.0\Persistencia.InterRapisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\Persistencia.InterRapisimo\obj\Debug\net8.0\refint\Persistencia.InterRapisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\Persistencia.InterRapisimo\obj\Debug\net8.0\Persistencia.InterRapisimo.pdb
+C:\Users\USER\source\repos\InterRapisimo\Persistencia.InterRapisimo\obj\Debug\net8.0\ref\Persistencia.InterRapisimo.dll

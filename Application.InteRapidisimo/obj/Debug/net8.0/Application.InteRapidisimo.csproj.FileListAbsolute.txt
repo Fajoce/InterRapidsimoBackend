@@ -1,0 +1,17 @@
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\bin\Debug\net8.0\Application.InteRapidisimo.deps.json
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\bin\Debug\net8.0\Application.InteRapidisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\bin\Debug\net8.0\Application.InteRapidisimo.pdb
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\obj\Debug\net8.0\Application.InteRapidisimo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\obj\Debug\net8.0\Application.InteRapidisimo.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\obj\Debug\net8.0\Application.InteRapidisimo.AssemblyInfo.cs
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\obj\Debug\net8.0\Application.InteRapidisimo.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\obj\Debug\net8.0\Application.InteRapidisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\obj\Debug\net8.0\refint\Application.InteRapidisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\obj\Debug\net8.0\Application.InteRapidisimo.pdb
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\obj\Debug\net8.0\ref\Application.InteRapidisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\bin\Debug\net8.0\Domain.IterRapisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\bin\Debug\net8.0\Domain.IterRapisimo.pdb
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\obj\Debug\net8.0\Application.InteRapidisimo.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\obj\Debug\net8.0\Applicat.BB595CFF.Up2Date
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\bin\Debug\net8.0\InfraStrucure.InterRapidisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\Application.InteRapidisimo\bin\Debug\net8.0\InfraStrucure.InterRapidisimo.pdb
