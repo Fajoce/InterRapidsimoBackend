@@ -107,28 +107,6 @@ namespace Application.InteRapidisimo.Services.Alumnos.Matriculas
 
                 return todos;
             }
-
-
-
-            if (usuario.Rol == "Administrador")
-            {
-                var todos = await (from m in _context.Matriculas
-                                   join a in _context.Alumnos on m.AlumnoID equals a.AlumnoID
-                                   join g in _context.Grados on m.GradoID equals g.GradoID
-                                   join u in _context.Usuarios on a.UsuarioID equals u.UsuarioID
-                                   select new VerMatriculasDTO
-                                   {
-                                       MatriculaID = m.MatriculaID,
-                                       AlumnoID = a.AlumnoID,
-                                       NombreAlumno = u.Nombre,
-                                       GradoID = g.GradoID,
-                                       GradoAlumno = g.Nombre,
-                                       AnioLectivo = m.AnioLectivo,
-                                       FechaMatricula = m.FechaMatricula
-                                   }).ToListAsync();
-
-                return todos;
-            }
             else
             {
                 var alumno = await _context.Alumnos.FirstOrDefaultAsync(a => a.UsuarioID == usuario.UsuarioID);

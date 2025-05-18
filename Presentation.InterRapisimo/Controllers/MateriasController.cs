@@ -14,20 +14,14 @@ namespace Presentation.InterRapisimo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   
-    public class MateriasController : ControllerBase
+    [Authorize]
+    public class MateriasController : BaseApiController
     {
-        private readonly IMediator _mediator;
-
-        public MateriasController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
-
+    
         [HttpPost]
         public async Task<IActionResult> CrearMaterias([FromBody] CreateMateriaCommand command)
         {
-            var result = await _mediator.Send(command);
+            var result = await Mediator.Send(command);
 
             if (!result)
                 return BadRequest(false);
@@ -37,7 +31,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpPut("update")]
         public async Task<IActionResult> UpdateMateria([FromBody] ActualizarMateriaDTO dto)
         {
-            var result = await _mediator.Send(new UpdateMateriaByIdCommand(dto));
+            var result = await Mediator.Send(new UpdateMateriaByIdCommand(dto));
 
             if (!result)
                 return NotFound("No se pudo actualizar la asignatura. Verifica que exista.");
@@ -47,7 +41,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteMateria(int id)
         {
-            var result = await _mediator.Send(new DeleteMateriaByIdCommand(id));
+            var result = await Mediator.Send(new DeleteMateriaByIdCommand(id));
 
             if (!result)
                 return NotFound($"No se encontró la asignatura con ID {id}");
@@ -57,7 +51,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpGet]
         public async Task<ActionResult<List<VerMateriasDTO>>> GetAll()
         {
-            var alumnos = await _mediator.Send(new GetMateriasQuery());
+            var alumnos = await Mediator.Send(new GetMateriasQuery());
 
             if (alumnos == null || !alumnos.Any())
                 return NotFound("No hay asignaturas registradas.");
@@ -67,7 +61,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult> GetMateriaByIdl(int id)
         {
-            var alumno = await _mediator.Send(new GetMateriasByIdQuery(id));
+            var alumno = await Mediator.Send(new GetMateriasByIdQuery(id));
 
             if (alumno == null)
                 return NotFound($"No existe asignatura con ese id{id}");

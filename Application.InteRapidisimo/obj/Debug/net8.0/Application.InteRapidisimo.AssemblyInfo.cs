@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Application.InteRapidisimo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aeb5a70d1b1b0ea6b67382a57d73b2e3af96e4a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Application.InteRapidisimo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Application.InteRapidisimo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

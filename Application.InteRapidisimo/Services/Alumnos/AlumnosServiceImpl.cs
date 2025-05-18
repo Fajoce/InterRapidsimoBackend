@@ -1,6 +1,5 @@
 ﻿using Domain.IterRapisimo.DTOs;
 using Domain.IterRapisimo.DTOs.Alumnos;
-using Domain.IterRapisimo.DTOs.Usuarios;
 using Domain.IterRapisimo.Entities;
 using Domain.IterRapisimo.Repositories;
 using InfraStrucure.InterRapidisimo.DataContext;
@@ -72,39 +71,16 @@ namespace Application.InteRapidisimo.Services
                 throw new UnauthorizedAccessException("ID de usuario no válido");
 
             var usuario = await _context.Usuarios.FindAsync(usuarioId);
-
             if (usuario == null)
                 throw new UnauthorizedAccessException("Usuario no encontrado");
 
-        
             if (usuario.Rol == "Administrador")
             {
-                var todos = await (from a in _context.Alumnos
-                                   join u in _context.Usuarios on a.UsuarioID equals u.UsuarioID
-                                   join m in _context.Matriculas on a.AlumnoID equals m.AlumnoID
-                                   join g in _context.Grados on m.GradoID equals g.GradoID
-                                   select new VerAlumnosDTO
-                                   {
-                                       AlumnoID = a.AlumnoID,
-                                       UsuarioID = u.UsuarioID,
-                                       AlumnoNombre = u.Nombre,
-                                       AlumnoEmail = u.Email,
-                                       FechaNacimiento = a.FechaNacimiento,
-                                       Direccion = a.Direccion,
-                                       GradoID = g.GradoID,
-                                       GradoNombre = g.Nombre
-                                   }).ToListAsync();
-
-                return todos;
-            }
-
-     
-
-            var list = await (from a in _context.Alumnos
+                // Mostrar todos los alumnos con su grado
+                return await (from a in _context.Alumnos
                               join u in _context.Usuarios on a.UsuarioID equals u.UsuarioID
                               join m in _context.Matriculas on a.AlumnoID equals m.AlumnoID
                               join g in _context.Grados on m.GradoID equals g.GradoID
-                             
                               select new VerAlumnosDTO
                               {
                                   AlumnoID = a.AlumnoID,
@@ -116,8 +92,42 @@ namespace Application.InteRapidisimo.Services
                                   GradoID = g.GradoID,
                                   GradoNombre = g.Nombre
                               }).ToListAsync();
+            }
+            else if (usuario.Rol == "Alumno")
+            {
+                // Obtener ID del alumno
+                var alumno = await _context.Alumnos.FirstOrDefaultAsync(a => a.UsuarioID == usuario.UsuarioID);
+                if (alumno == null)
+                    throw new UnauthorizedAccessException("Alumno no encontrado");
 
-            return list;
+                // Obtener matrícula del alumno para saber su grado
+                var matricula = await _context.Matriculas.FirstOrDefaultAsync(m => m.AlumnoID == alumno.AlumnoID);
+                if (matricula == null)
+                    throw new UnauthorizedAccessException("Matrícula no encontrada");
+
+                var gradoId = matricula.GradoID;
+
+                // Mostrar alumnos del mismo grado
+                return await (from a in _context.Alumnos
+                              join u in _context.Usuarios on a.UsuarioID equals u.UsuarioID
+                              join m in _context.Matriculas on a.AlumnoID equals m.AlumnoID
+                              join g in _context.Grados on m.GradoID equals g.GradoID
+                              where g.GradoID == gradoId
+                              select new VerAlumnosDTO
+                              {
+                                  AlumnoID = a.AlumnoID,
+                                  UsuarioID = u.UsuarioID,
+                                  AlumnoNombre = u.Nombre,
+                                  AlumnoEmail = u.Email,
+                                  FechaNacimiento = a.FechaNacimiento,
+                                  Direccion = a.Direccion,
+                                  GradoID = g.GradoID,
+                                  GradoNombre = g.Nombre
+                              }).ToListAsync();
+            }
+
+            // Otros roles (opcionalmente lanza error o retorna vacío)
+            throw new UnauthorizedAccessException("Acceso no permitido");
         }
 
         public async Task<VerAlumnosDTO> GetStudentById(int id)

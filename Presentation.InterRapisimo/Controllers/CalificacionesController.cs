@@ -15,19 +15,13 @@ namespace Presentation.InterRapisimo.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
-    public class CalificacionesController : ControllerBase
+    public class CalificacionesController : BaseApiController
     {
-        private readonly IMediator _mediator;
-
-        public CalificacionesController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
-
+       
         [HttpPost]
         public async Task<IActionResult> CrearCalificaciones([FromBody] CreateCalificacionCommand command)
         {
-            var result = await _mediator.Send(command);
+            var result = await Mediator.Send(command);
 
             if (!result)
                 return BadRequest(Result<string>.Failure("No se pudieron crear las calificaciones"));
@@ -37,7 +31,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpPut("update")]
         public async Task<IActionResult> Updatecalificaciones([FromBody] ActualizarCalificacionesDTO dto)
         {
-            var result = await _mediator.Send(new UpdateCalificacionesByIdCommand(dto));
+            var result = await Mediator.Send(new UpdateCalificacionesByIdCommand(dto));
 
             if (!result)
                 return NotFound("No se pudieron actualizar las calificaciones. Verifica que exista.");
@@ -47,7 +41,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCalificaciones(int id)
         {
-            var result = await _mediator.Send(new DeleteCalificacionesByIdCommand(id));
+            var result = await Mediator.Send(new DeleteCalificacionesByIdCommand(id));
 
             if (!result)
                 return NotFound($"No se encontraron las calificaciones con ID {id}");
@@ -57,7 +51,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpGet]
         public async Task<ActionResult<List<VerCalificacionesDTO>>> GetAll()
         {
-            var grades = await _mediator.Send(new GetCalificacionesQuery());
+            var grades = await Mediator.Send(new GetCalificacionesQuery());
 
             if (grades == null || !grades.Any())
                 return NotFound("No hay calificaciones  registradas.");
@@ -67,7 +61,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult> GetCalificacionesByIdl(int id)
         {
-            var grade = await _mediator.Send(new GetCalificacionesByIdQuery(id));
+            var grade = await Mediator.Send(new GetCalificacionesByIdQuery(id));
 
             if (grade == null)
                 return NotFound($"No existe alumno con ese id{id}");

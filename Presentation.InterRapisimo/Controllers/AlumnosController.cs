@@ -1,33 +1,24 @@
 ﻿using Application.InteRapidisimo.Features.Alumnos.Command;
 using Application.InteRapidisimo.Features.Alumnos.Queries;
-using Application.InteRapidisimo.Features.Usuarios.Command;
 using Domain.IterRapisimo;
-using Domain.IterRapisimo.DTOs;
 using Domain.IterRapisimo.DTOs.Alumnos;
 using Domain.IterRapisimo.DTOs.Usuarios;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.InterRapisimo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
- 
-    public class AlumnosController : ControllerBase
+    [Authorize]
+    public class AlumnosController : BaseApiController
     {
-        private readonly IMediator _mediator;
-
-        public AlumnosController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
-
+       
         [HttpPost]
         public async Task<IActionResult> CrearUsuario([FromBody] CreateAlumnoCommand command)
         {
-            var result = await _mediator.Send(command);
+            var result = await Mediator.Send(command);
 
             if (!result)
                 return BadRequest(Result<string>.Failure("No se pudo crear el usuario"));
@@ -37,7 +28,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpPut("update")]
         public async Task<IActionResult> UpdateAlumno([FromBody] ActualizarAlumnoDTO dto)
         {
-            var result = await _mediator.Send(new UpdateAlumnoCommand(dto));
+            var result = await Mediator.Send(new UpdateAlumnoCommand(dto));
 
             if (!result)
                 return NotFound("No se pudo actualizar el alumno. Verifica que exista.");
@@ -47,7 +38,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAlumno(int id)
         {
-            var result = await _mediator.Send(new DeleteAlumnoByIdCommand(id));
+            var result = await Mediator.Send(new DeleteAlumnoByIdCommand(id));
 
             if (!result)
                 return NotFound($"No se encontró el alumno con ID {id}");
@@ -57,7 +48,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpGet]
         public async Task<ActionResult<List<VerAlumnosDTO>>> GetAll()
         {
-            var alumnos = await _mediator.Send(new GetAlumnoQuery());
+            var alumnos = await Mediator.Send(new GetAlumnoQuery());
 
             if (alumnos == null || !alumnos.Any())
                 return NotFound("No hay alumnos registrados.");
@@ -67,7 +58,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpGet("Usuarios")]
         public async Task<ActionResult<List<GetUsuariosDTO>>> GetAllUsers()
         {
-            var alumnos = await _mediator.Send(new GetAlumnosUsuariosQuery());
+            var alumnos = await Mediator.Send(new GetAlumnosUsuariosQuery());
 
             if (alumnos == null || !alumnos.Any())
                 return NotFound("No hay usuarios registrados.");
@@ -77,7 +68,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult> GetStudentByIdl(int id)
         {
-            var alumno = await _mediator.Send(new GetalumnoByIdQuery(id));
+            var alumno = await Mediator.Send(new GetalumnoByIdQuery(id));
 
             if (alumno == null)
                 return NotFound($"No existe alumno con ese id{id}");

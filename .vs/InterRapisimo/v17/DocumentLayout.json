@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D32BDEBB-0CA1-41F8-9A70-E5BA254C8258}|Presentation.InterRapisimo\\Presentation.InterRapisimo.csproj|c:\\users\\user\\source\\repos\\interrapisimo\\presentation.interrapisimo\\controllers\\matriculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D32BDEBB-0CA1-41F8-9A70-E5BA254C8258}|Presentation.InterRapisimo\\Presentation.InterRapisimo.csproj|solutionrelative:presentation.interrapisimo\\controllers\\matriculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9D3FA33C-05C1-4140-9766-2FFA8F513302}|Application.InteRapidisimo\\Application.InteRapidisimo.csproj|c:\\users\\user\\source\\repos\\interrapisimo\\application.interapidisimo\\services\\alumnos\\matriculas\\matriculaserviceiml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D3FA33C-05C1-4140-9766-2FFA8F513302}|Application.InteRapidisimo\\Application.InteRapidisimo.csproj|solutionrelative:application.interapidisimo\\services\\alumnos\\matriculas\\matriculaserviceiml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D32BDEBB-0CA1-41F8-9A70-E5BA254C8258}|Presentation.InterRapisimo\\Presentation.InterRapisimo.csproj|c:\\users\\user\\source\\repos\\interrapisimo\\presentation.interrapisimo\\controllers\\docentescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D32BDEBB-0CA1-41F8-9A70-E5BA254C8258}|Presentation.InterRapisimo\\Presentation.InterRapisimo.csproj|solutionrelative:presentation.interrapisimo\\controllers\\docentescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D3FA33C-05C1-4140-9766-2FFA8F513302}|Application.InteRapidisimo\\Application.InteRapidisimo.csproj|c:\\users\\user\\source\\repos\\interrapisimo\\application.interapidisimo\\services\\alumnos\\alumnosserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D3FA33C-05C1-4140-9766-2FFA8F513302}|Application.InteRapidisimo\\Application.InteRapidisimo.csproj|solutionrelative:application.interapidisimo\\services\\alumnos\\alumnosserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D3FA33C-05C1-4140-9766-2FFA8F513302}|Application.InteRapidisimo\\Application.InteRapidisimo.csproj|c:\\users\\user\\source\\repos\\interrapisimo\\application.interapidisimo\\features\\matriculas\\queries\\getselectalumnosquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D3FA33C-05C1-4140-9766-2FFA8F513302}|Application.InteRapidisimo\\Application.InteRapidisimo.csproj|solutionrelative:application.interapidisimo\\features\\matriculas\\queries\\getselectalumnosquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F1CB144-5D56-45AE-BF7D-45509C20D4CF}|Domain.IterRapisimo\\Domain.IterRapisimo.csproj|c:\\users\\user\\source\\repos\\interrapisimo\\domain.iterrapisimo\\entities\\alumnos\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1CB144-5D56-45AE-BF7D-45509C20D4CF}|Domain.IterRapisimo\\Domain.IterRapisimo.csproj|solutionrelative:domain.iterrapisimo\\entities\\alumnos\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D3FA33C-05C1-4140-9766-2FFA8F513302}|Application.InteRapidisimo\\Application.InteRapidisimo.csproj|c:\\users\\user\\source\\repos\\interrapisimo\\application.interapidisimo\\features\\matriculas\\queries\\getselectalumnosqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D3FA33C-05C1-4140-9766-2FFA8F513302}|Application.InteRapidisimo\\Application.InteRapidisimo.csproj|solutionrelative:application.interapidisimo\\features\\matriculas\\queries\\getselectalumnosqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F1CB144-5D56-45AE-BF7D-45509C20D4CF}|Domain.IterRapisimo\\Domain.IterRapisimo.csproj|c:\\users\\user\\source\\repos\\interrapisimo\\domain.iterrapisimo\\entities\\grados\\grado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1CB144-5D56-45AE-BF7D-45509C20D4CF}|Domain.IterRapisimo\\Domain.IterRapisimo.csproj|solutionrelative:domain.iterrapisimo\\entities\\grados\\grado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1CB144-5D56-45AE-BF7D-45509C20D4CF}|Domain.IterRapisimo\\Domain.IterRapisimo.csproj|c:\\users\\user\\source\\repos\\interrapisimo\\domain.iterrapisimo\\entities\\matriculas\\matricula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1CB144-5D56-45AE-BF7D-45509C20D4CF}|Domain.IterRapisimo\\Domain.IterRapisimo.csproj|solutionrelative:domain.iterrapisimo\\entities\\matriculas\\matricula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F1CB144-5D56-45AE-BF7D-45509C20D4CF}|Domain.IterRapisimo\\Domain.IterRapisimo.csproj|c:\\users\\user\\source\\repos\\interrapisimo\\domain.iterrapisimo\\entities\\usuarios\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F1CB144-5D56-45AE-BF7D-45509C20D4CF}|Domain.IterRapisimo\\Domain.IterRapisimo.csproj|solutionrelative:domain.iterrapisimo\\entities\\usuarios\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MatriculaServiceIml.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Application.InteRapidisimo\\Services\\Alumnos\\Matriculas\\MatriculaServiceIml.cs",
               "RelativeDocumentMoniker": "Application.InteRapidisimo\\Services\\Alumnos\\Matriculas\\MatriculaServiceIml.cs",
               "ToolTip": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Application.InteRapidisimo\\Services\\Alumnos\\Matriculas\\MatriculaServiceIml.cs",
               "RelativeToolTip": "Application.InteRapidisimo\\Services\\Alumnos\\Matriculas\\MatriculaServiceIml.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAEkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAEwHUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T21:46:02.34Z",
+              "WhenOpened": "2025-05-18T23:29:15.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DocentesController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Presentation.InterRapisimo\\Controllers\\DocentesController.cs",
-              "RelativeDocumentMoniker": "Presentation.InterRapisimo\\Controllers\\DocentesController.cs",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Presentation.InterRapisimo\\Controllers\\DocentesController.cs",
-              "RelativeToolTip": "Presentation.InterRapisimo\\Controllers\\DocentesController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAEwEsAAAAIAAAAAAAAAA==",
+              "Title": "Alumno.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Domain.IterRapisimo\\Entities\\Alumnos\\Alumno.cs",
+              "RelativeDocumentMoniker": "Domain.IterRapisimo\\Entities\\Alumnos\\Alumno.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Domain.IterRapisimo\\Entities\\Alumnos\\Alumno.cs",
+              "RelativeToolTip": "Domain.IterRapisimo\\Entities\\Alumnos\\Alumno.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T21:35:52.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MatriculasController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Presentation.InterRapisimo\\Controllers\\MatriculasController.cs",
-              "RelativeDocumentMoniker": "Presentation.InterRapisimo\\Controllers\\MatriculasController.cs",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Presentation.InterRapisimo\\Controllers\\MatriculasController.cs",
-              "RelativeToolTip": "Presentation.InterRapisimo\\Controllers\\MatriculasController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAADsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T21:34:55.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetSelectAlumnosQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Application.InteRapidisimo\\Features\\Matriculas\\Queries\\GetSelectAlumnosQueryHandler.cs",
-              "RelativeDocumentMoniker": "Application.InteRapidisimo\\Features\\Matriculas\\Queries\\GetSelectAlumnosQueryHandler.cs",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Application.InteRapidisimo\\Features\\Matriculas\\Queries\\GetSelectAlumnosQueryHandler.cs",
-              "RelativeToolTip": "Application.InteRapidisimo\\Features\\Matriculas\\Queries\\GetSelectAlumnosQueryHandler.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T21:33:36.022Z",
+              "WhenOpened": "2025-05-18T23:26:40.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GetSelectAlumnosQuery.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Application.InteRapidisimo\\Features\\Matriculas\\Queries\\GetSelectAlumnosQuery.cs",
-              "RelativeDocumentMoniker": "Application.InteRapidisimo\\Features\\Matriculas\\Queries\\GetSelectAlumnosQuery.cs",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Application.InteRapidisimo\\Features\\Matriculas\\Queries\\GetSelectAlumnosQuery.cs",
-              "RelativeToolTip": "Application.InteRapidisimo\\Features\\Matriculas\\Queries\\GetSelectAlumnosQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABJAAAAAAAAAA==",
+              "Title": "Grado.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Domain.IterRapisimo\\Entities\\Grados\\Grado.cs",
+              "RelativeDocumentMoniker": "Domain.IterRapisimo\\Entities\\Grados\\Grado.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Domain.IterRapisimo\\Entities\\Grados\\Grado.cs",
+              "RelativeToolTip": "Domain.IterRapisimo\\Entities\\Grados\\Grado.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T21:32:47.162Z",
+              "WhenOpened": "2025-05-18T23:26:12.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Matricula.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Domain.IterRapisimo\\Entities\\Matriculas\\Matricula.cs",
+              "RelativeDocumentMoniker": "Domain.IterRapisimo\\Entities\\Matriculas\\Matricula.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Domain.IterRapisimo\\Entities\\Matriculas\\Matricula.cs",
+              "RelativeToolTip": "Domain.IterRapisimo\\Entities\\Matriculas\\Matricula.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T23:25:56.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Domain.IterRapisimo\\Entities\\Usuarios\\Usuario.cs",
+              "RelativeDocumentMoniker": "Domain.IterRapisimo\\Entities\\Usuarios\\Usuario.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Domain.IterRapisimo\\Entities\\Usuarios\\Usuario.cs",
+              "RelativeToolTip": "Domain.IterRapisimo\\Entities\\Usuarios\\Usuario.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T23:25:29.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlumnosServiceImpl.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Application.InteRapidisimo\\Services\\Alumnos\\AlumnosServiceImpl.cs",
+              "RelativeDocumentMoniker": "Application.InteRapidisimo\\Services\\Alumnos\\AlumnosServiceImpl.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\InterRapisimo\\Application.InteRapidisimo\\Services\\Alumnos\\AlumnosServiceImpl.cs",
+              "RelativeToolTip": "Application.InteRapidisimo\\Services\\Alumnos\\AlumnosServiceImpl.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAIIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T23:23:35.148Z",
               "EditorCaption": ""
             }
           ]

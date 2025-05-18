@@ -14,20 +14,15 @@ namespace Presentation.InterRapisimo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   
-    public class GradosController : ControllerBase
+    [Authorize]
+
+    public class GradosController : BaseApiController
     {
-        private readonly IMediator _mediator;
-
-        public GradosController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
-
+  
         [HttpPost]
         public async Task<IActionResult> CrearGrado([FromBody] CreateGradoCommand command)
         {
-            var result = await _mediator.Send(command);
+            var result = await Mediator.Send(command);
 
             if (!result)
                 return BadRequest(Result<string>.Failure("No se pudo crear el grado"));
@@ -37,7 +32,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpPut("update")]
         public async Task<IActionResult> UpdateGrado([FromBody] ActualizarGradoDTO dto)
         {
-            var result = await _mediator.Send(new UpdateGradoByIdCommand(dto));
+            var result = await Mediator.Send(new UpdateGradoByIdCommand(dto));
 
             if (!result)
                 return NotFound("No se pudo actualizar el grado. Verifica que exista.");
@@ -47,7 +42,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteGrado(int id)
         {
-            var result = await _mediator.Send(new DeleteGradoByIdCommand(id));
+            var result = await Mediator.Send(new DeleteGradoByIdCommand(id));
 
             if (!result)
                 return NotFound($"No se encontró el grado con ID {id}");
@@ -57,7 +52,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpGet]
         public async Task<ActionResult<List<VerGradosDTO>>> GetAll()
         {
-            var alumnos = await _mediator.Send(new GetgradosQuery());
+            var alumnos = await Mediator.Send(new GetgradosQuery());
 
             if (alumnos == null || !alumnos.Any())
                 return NotFound("No hay alumnos registrados.");
@@ -67,7 +62,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult> GetGradoByIdl(int id)
         {
-            var alumno = await _mediator.Send(new GetGradoByIdQuery(id));
+            var alumno = await Mediator.Send(new GetGradoByIdQuery(id));
 
             if (alumno == null)
                 return NotFound($"No existe grado con ese id{id}");

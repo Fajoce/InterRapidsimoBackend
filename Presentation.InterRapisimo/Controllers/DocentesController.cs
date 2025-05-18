@@ -4,26 +4,21 @@ using Domain.IterRapisimo;
 using Domain.IterRapisimo.DTOs.Alumnos;
 using Domain.IterRapisimo.DTOs.Docentes;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.InterRapisimo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   
-    public class DocentesController : ControllerBase
+    [Authorize]
+    public class DocentesController : BaseApiController
     {
-        private readonly IMediator _mediator;
-
-        public DocentesController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
-
+        
         [HttpPost]
         public async Task<IActionResult> CrearDocente([FromBody] CreateDocenteCommand command)
         {
-            var result = await _mediator.Send(command);
+            var result = await Mediator.Send(command);
 
             if (!result)
                 return BadRequest(Result<string>.Failure("No se pudo crear el docente"));
@@ -33,7 +28,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpPut("update")]
         public async Task<IActionResult> UpdateAlumno([FromBody] ActualizarDocenteDTO dto)
         {
-            var result = await _mediator.Send(new UpdateDocenteByIdCommand(dto));
+            var result = await Mediator.Send(new UpdateDocenteByIdCommand(dto));
 
             if (!result)
                 return NotFound("No se pudo actualizar el docente. Verifica que exista.");
@@ -43,7 +38,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDocente(int id)
         {
-            var result = await _mediator.Send(new DeleteDocenteByIdCommand(id));
+            var result = await Mediator.Send(new DeleteDocenteByIdCommand(id));
 
             if (!result)
                 return NotFound($"No se encontró el docente con ID {id}");
@@ -53,7 +48,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpGet]
         public async Task<ActionResult<List<VerAlumnosDTO>>> GetAll()
         {
-            var alumnos = await _mediator.Send(new GetDocentesQuery());
+            var alumnos = await Mediator.Send(new GetDocentesQuery());
 
             if (alumnos == null || !alumnos.Any())
                 return NotFound("No hay docentes registrados.");
@@ -64,7 +59,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpGet("SelectedTeachers")]
         public async Task<ActionResult<List<SelectDocentesDTO>>> GetSelectedTeachers()
         {
-            var teachers = await _mediator.Send(new GetSelectedTeachersQuery());
+            var teachers = await Mediator.Send(new GetSelectedTeachersQuery());
 
             if (teachers == null || !teachers.Any())
                 return NotFound("No hay docentes registrados.");
@@ -74,7 +69,7 @@ namespace Presentation.InterRapisimo.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult> GetTeacherByIdl(int id)
         {
-            var alumno = await _mediator.Send(new GetDocenteByIdQuery(id));
+            var alumno = await Mediator.Send(new GetDocenteByIdQuery(id));
 
             if (alumno == null)
                 return NotFound($"No existe docente con ese id{id}");

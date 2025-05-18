@@ -1,16 +1,10 @@
 ﻿using Domain.IterRapisimo.DTOs.Docentes;
-using Domain.IterRapisimo.DTOs.Grados;
 using Domain.IterRapisimo.Entities;
 using Domain.IterRapisimo.Repositories.Docentes;
 using InfraStrucure.InterRapidisimo.DataContext;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.InteRapidisimo.Services.Docentes
 {

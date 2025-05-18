@@ -1,14 +1,8 @@
-﻿using Domain.IterRapisimo.DTOs.Asignaciones;
-using Domain.IterRapisimo.DTOs.Calificaciones;
+﻿using Domain.IterRapisimo.DTOs.Calificaciones;
 using Domain.IterRapisimo.Entities;
 using Domain.IterRapisimo.Repositories.Calificaciones;
 using InfraStrucure.InterRapidisimo.DataContext;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.InteRapidisimo.Services.Calificaciones
 {
