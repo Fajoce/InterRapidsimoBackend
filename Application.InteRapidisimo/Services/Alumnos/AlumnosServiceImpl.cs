@@ -24,7 +24,13 @@ namespace Application.InteRapidisimo.Services
         public async Task<bool> CreateStudent(CreateAlumnoDTO alumno)
         {
             await isAuthAndAdmAsync();
+             bool alumnoExiste = await _context.Alumnos
+     .AnyAsync(a => a.UsuarioID == alumno.UsuarioID);
 
+ if (alumnoExiste)
+ {
+     return false; // Ya existe este alumno
+ }
             var student = new Alumno
             {
                 UsuarioID = alumno.UsuarioID,
