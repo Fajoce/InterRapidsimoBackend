@@ -1,4 +1,4 @@
-﻿using Domain.IterRapisimo.DTOs;
+using Domain.IterRapisimo.DTOs;
 using Domain.IterRapisimo.DTOs.Asignaciones;
 using Domain.IterRapisimo.Entities;
 using Domain.IterRapisimo.Repositories.Asignaciones;
@@ -17,6 +17,28 @@ namespace Application.InteRapidisimo.Services.Asignaciones
         }
         public async Task<bool> CreateAssigment(CreateAsinacionDTO assigment)
         {
+            bool alreadyAssigned = await _context.Asignaciones
+        .AnyAsync(a =>
+            a.DocenteID == assigment.DocenteID &&
+            a.MateriaID == assigment.MateriaID &&
+            a.GradoID == assigment.GradoID);
+
+            if (alreadyAssigned)
+            {
+                return false; // Ya existe esta asignación, no se permite duplicar
+
+            }
+            // Verificar cuántas materias tiene asignadas el docente (distintas)
+            int materiasAsignadas = await _context.Asignaciones
+                .Where(a => a.DocenteID == assigment.DocenteID)
+                .Select(a => a.MateriaID)
+                .Distinct()
+                .CountAsync();
+
+            if (materiasAsignadas >= 3)
+            {
+                return false; // No se puede asignar más de 3 materias
+            }
             var assig = new Asignacion
             {
              
