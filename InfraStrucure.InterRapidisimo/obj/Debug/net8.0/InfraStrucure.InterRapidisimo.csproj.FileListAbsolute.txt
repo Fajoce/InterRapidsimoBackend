@@ -15,3 +15,4 @@ C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug
 C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\InfraStrucure.InterRapidisimo.pdb
 C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\InfraStrucure.InterRapidisimo.genruntimeconfig.cache
 C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\ref\InfraStrucure.InterRapidisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\InfraStrucure.InterRapidisimo\obj\Debug\net8.0\InfraStrucure.InterRapidisimo.sourcelink.json

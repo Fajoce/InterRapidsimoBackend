@@ -10,3 +10,4 @@ C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\Do
 C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\refint\Domain.IterRapisimo.dll
 C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\Domain.IterRapisimo.pdb
 C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\ref\Domain.IterRapisimo.dll
+C:\Users\USER\source\repos\InterRapisimo\Domain.IterRapisimo\obj\Debug\net8.0\Domain.IterRapisimo.sourcelink.json
