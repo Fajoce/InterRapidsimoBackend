@@ -39,14 +39,22 @@ namespace Application.InteRapidisimo.Services.Materias
 
             if (usuario.Rol != "Administrador")
                 throw new UnauthorizedAccessException("Acceso denegado. Solo administradores pueden crear matrículas.");
-            var subjectAreas = new Materia
-            {
-                Nombre = subject.Nombre
-            };
-            if (subjectAreas == null)
-            {
-                return false;
-            }
+                
+             bool materiaExiste = await _context.Materias
+             .AnyAsync(m => m.Nombre.ToLower().Trim() == subject.Nombre.ToLower().Trim());
+
+                 if (materiaExiste)
+                 {
+                     return false; // Ya existe una materia con ese nombre
+                 }
+                 var subjectAreas = new Materia
+                 {
+                     Nombre = subject.Nombre.Trim()
+                 };
+                 if (subjectAreas == null)
+                 {
+                     return false;
+                 }
 
             await _context.Materias.AddAsync(subjectAreas);
             _context.SaveChanges();
